@@ -1,0 +1,380 @@
+/*========== FONT FAMILY ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Prompt:wght@300;400;500;600;700&display=swap');
+
+/*========== VARIABLES CSS ==========*/
+:root {
+    --biggest-font-size: 5rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --text-color: #fff;
+}
+
+/*========== BASE ==========*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Itim', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0a0a0a, #00093a);
+}
+
+section .color {
+    position: absolute;
+    filter: blur(150px);
+}
+
+section .color:nth-child(1) {
+    border-radius: 100%;
+    top: -400px;
+    left: -400px;
+    width: 600px;
+    height: 600px;
+    background: #6d2169;
+}
+
+section .color:nth-child(2) {
+    border-radius: 100%;
+    top: -300px;
+    right: -300px;
+    width: 400px;
+    height: 600px;
+    background: #692558;
+}
+
+section .color:nth-child(3) {
+    border-radius: 100%;
+    bottom: -300px;
+    right: -300px;
+    width: 400px;
+    height: 600px;
+    background: #53248b;
+}
+
+section .color:nth-child(4) {
+    border-radius: 100%;
+    left: 450px;
+    bottom: 150px;
+    width: 90px;
+    height: 90px;
+    background: #ff009d;
+}
+
+section .color:nth-child(5) {
+    border-radius: 100%;
+    left: 460px;
+    bottom: 160px;
+    width: 70px;
+    height: 70px;
+    background: #ff71cb;
+}
+
+.box {
+    position: relative;
+}
+
+.box .point {
+    position: absolute;
+
+    background: #fff;
+    border-radius: 100%;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(10rem);
+    }
+}
+
+.box .point:nth-child(1) {
+    top: 50px;
+    right: 800px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(2) {
+    top: 200px;
+    right: 700px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(3) {
+    top: 480px;
+    right: 350px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(5) {
+    top: 550px;
+    right: 420px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(6) {
+    top: 700px;
+    right: 600px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(7) {
+    top: 700px;
+    right: 100px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(8) {
+    top: 700px;
+    right: 1200px;
+    width: 3.5px;
+    height: 3.5px;
+}
+
+.box .point:nth-child(9) {
+    top: 80px;
+    right: 1210px;
+    width: 2px;
+    height: 2px;
+}
+
+.box .point:nth-child(10) {
+    top: 130px;
+    right: 1290px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(11) {
+    top: 300px;
+    right: 1450px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(12) {
+    top: 534px;
+    right: 1175px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(13) {
+    top: 433px;
+    right: 1032px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(14) {
+    top: 698px;
+    right: 982px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(15) {
+    top: 120px;
+    right: 129px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(16) {
+    top: 239px;
+    right: 349px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(17) {
+    top: 439px;
+    right: 249px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(18) {
+    top: 559px;
+    right: 649px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(19) {
+    top: 10px;
+    right: 649px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+.box .point:nth-child(20) {
+    top: 359px;
+    right: 749px;
+    width: 1.5px;
+    height: 1.5px;
+}
+
+/*========== LAYOUT ==========*/
+.container {
+    max-width: 968px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.main {
+    overflow: hidden; /* For animation */
+}
+
+/*========== HEADER ==========*/
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+header h1 {
+    font-size: var(--biggest-font-size);
+    letter-spacing: 8px;
+}
+
+/*========== HOME ==========*/
+.homeImg {
+    height: 350px;
+    padding-bottom: .5rem;
+}
+
+.homeContainer {
+    /* background-color: #53248b; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.homeContainer h2 {
+    font-size: var(--h1-font-size);
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+.homeContainer p {
+    font-size: var(--h2-font-size);
+    letter-spacing: 2px;
+    line-height: 22pt;
+    padding-bottom: 1.25rem;
+}
+
+.homeIconLink {
+    color: #fff;
+    display: flex;
+}
+
+.homeIconLink h3 {
+    font-size: var(--h3-font-size);
+    letter-spacing: 2px;
+    text-align: left;
+}
+
+.homeIcon {
+    font-size: 1.25rem;
+}
+
+.homeBoxCenter {
+    text-align: center;
+}
+
+.homeBoxCenter h2 {
+    font-size: var(--h1-font-size);
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+.homeBoxCenter ul {
+    line-height: 2rem;
+}
+
+.homeBoxCenter ul li a {
+    color: #fff;
+}
+
+.homeTextTitle h2{
+    font-size: var(--h1-font-size);
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.homeSkill {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+
+.homeSkill h3 {
+    font-size: var(--h2-font-size);
+    letter-spacing: 3px;
+    padding-bottom: 2rem;
+}
+
+.homeSkill p {
+    font-size: var(--h3-font-size);
+    letter-spacing: 2px;
+    line-height: 22pt;
+    padding-bottom: 1.25rem;
+}
+
+/*==================== Swiper Class ====================*/
+.swiper-pagination {
+    position: initial;
+    margin-top: 3rem;
+}
+
+.swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: .5rem;
+}
+
+.swiper-pagination-bullet-active {
+    width: 1.5rem;
+    height: 5px;
+    border-radius: .5rem;
+}
